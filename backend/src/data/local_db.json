@@ -1,0 +1,150 @@
+{
+  "organizers": [
+    {
+      "id": "d91c6f4e-10de-411b-970c-4054b56e782c",
+      "name": "Automated Test Organizer",
+      "email": "test.org.33493@eventpulse.io",
+      "password": "$2a$12$cm6y/7yH/vYZMDgZ2L/fieSMiZaoVF8YIp4uNjgem4D9rYd5CgqWi",
+      "created_at": "2026-08-26T07:38:40.097Z"
+    },
+    {
+      "id": "d612428d-bd7a-4aca-b96f-0e8c1957f906",
+      "name": "Automated Test Organizer",
+      "email": "test.org.62522@eventpulse.io",
+      "password": "$2a$12$vTB9Ksw9RrNnBPXxX1wrm.SJ8WghmaXoxyQG/O4IV.l3.JH9gmE0q",
+      "created_at": "2026-08-26T07:39:16.446Z"
+    },
+    {
+      "id": "d6763869-7413-4554-b549-969afccdbb48",
+      "name": "Automated Test Organizer",
+      "email": "test.org.5431@eventpulse.io",
+      "password": "$2a$12$us2HiyqYqvj7vPyOZFJ9xOaVHd2ZlnpIpTHDaNS6ukYzZtlRUmV6i",
+      "created_at": "2026-08-26T07:39:35.433Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "name": "Automated Test Summit 5431",
+      "description": "Testing live check-ins and analytics",
+      "venue": "Hall Alpha",
+      "event_date": "2026-08-26",
+      "start_time": null,
+      "created_by": "d6763869-7413-4554-b549-969afccdbb48",
+      "created_at": "2026-08-26T07:39:35.680Z"
+    }
+  ],
+  "attendees": [
+    {
+      "id": "76695fa7-103a-4cce-84a3-2d0a625abbe3",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "name": "Attendee Alpha",
+      "email": "alpha.5431@test.com",
+      "qr_token": "d7cf75439ad45f301ec1ed6310602d7d5ce48ad43bcaa216",
+      "registration_status": "registered",
+      "created_at": "2026-08-26T07:39:35.688Z"
+    },
+    {
+      "id": "12f27cd1-8ef6-42a3-993e-61365450a33b",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "name": "Attendee Beta",
+      "email": "beta.5431@test.com",
+      "qr_token": "3be985168da47fd8c1f9476a7caca04c1f7c868ad6cbb1c7",
+      "registration_status": "registered",
+      "created_at": "2026-08-26T07:39:35.693Z"
+    },
+    {
+      "id": "c146dedf-52d2-4059-a7f6-15cba43b1f35",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "name": "Attendee Gamma",
+      "email": "gamma.5431@test.com",
+      "qr_token": "f2e9c886ae26a83ac2baa5867f95daf470adac9e64a7ef2f",
+      "registration_status": "registered",
+      "created_at": "2026-08-26T07:39:35.698Z"
+    }
+  ],
+  "checkins": [
+    {
+      "id": "506c1ae8-20b1-478c-a7be-56de99a80d75",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "attendee_id": "76695fa7-103a-4cce-84a3-2d0a625abbe3",
+      "entry_point": "Main Gate",
+      "created_at": "2026-08-26T07:39:35.706Z",
+      "checked_in_at": "2026-08-26T07:39:35.706Z"
+    },
+    {
+      "id": "aaac717d-7d5b-41af-a4dd-7d13f108522d",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "attendee_id": "12f27cd1-8ef6-42a3-993e-61365450a33b",
+      "entry_point": "Entry Gate 1",
+      "created_at": "2026-08-26T07:39:35.735Z",
+      "checked_in_at": "2026-08-26T07:39:35.735Z"
+    },
+    {
+      "id": "00118222-cb73-4475-8885-e7cfa62ea4d8",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "attendee_id": "c146dedf-52d2-4059-a7f6-15cba43b1f35",
+      "entry_point": "Gate Alpha",
+      "created_at": "2026-08-26T07:39:35.771Z",
+      "checked_in_at": "2026-08-26T07:39:35.771Z"
+    }
+  ],
+  "invalid_scan_logs": [
+    {
+      "id": "c452f676-329b-4a95-a7f6-ab1f06b3831c",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "scanned_value": "eventpulse:6ac7001d-9d45-47fe-91af-1099fb467cd2:d7cf75439ad45f301ec1ed6310602d7d5ce48ad43bcaa216",
+      "entry_point": "Gate A",
+      "reason": "ALREADY_CHECKED_IN",
+      "created_at": "2026-08-26T07:39:35.716Z"
+    },
+    {
+      "id": "7ac2b076-35e1-46a3-8669-4b39c219dfd3",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "scanned_value": "eventpulse:6ac7001d-9d45-47fe-91af-1099fb467cd2:0123456789abcdef0123456789abcdef0123456789abcdef",
+      "entry_point": "Gate B",
+      "reason": "UNKNOWN_QR",
+      "created_at": "2026-08-26T07:39:35.725Z"
+    },
+    {
+      "id": "854b94e3-46ed-4395-a16a-fd5d410b5fd1",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "scanned_value": "eventpulse:6ac7001d-9d45-47fe-91af-1099fb467cd2:3be985168da47fd8c1f9476a7caca04c1f7c868ad6cbb1c7",
+      "entry_point": "Entry Gate 2",
+      "reason": "ALREADY_CHECKED_IN",
+      "created_at": "2026-08-26T07:39:35.743Z"
+    },
+    {
+      "id": "f9704939-df53-4d07-a9d3-b1d7f257b5c7",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "scanned_value": "eventpulse:6ac7001d-9d45-47fe-91af-1099fb467cd2:3be985168da47fd8c1f9476a7caca04c1f7c868ad6cbb1c7",
+      "entry_point": "Entry Gate 3",
+      "reason": "ALREADY_CHECKED_IN",
+      "created_at": "2026-08-26T07:39:35.750Z"
+    },
+    {
+      "id": "3dbe96bb-e359-4d39-8437-8e626d8aa3e8",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "scanned_value": "eventpulse:6ac7001d-9d45-47fe-91af-1099fb467cd2:3be985168da47fd8c1f9476a7caca04c1f7c868ad6cbb1c7",
+      "entry_point": "Entry Gate 4",
+      "reason": "ALREADY_CHECKED_IN",
+      "created_at": "2026-08-26T07:39:35.757Z"
+    },
+    {
+      "id": "2ef5090e-aec7-4132-af69-445988c87fac",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "scanned_value": "eventpulse:6ac7001d-9d45-47fe-91af-1099fb467cd2:3be985168da47fd8c1f9476a7caca04c1f7c868ad6cbb1c7",
+      "entry_point": "Entry Gate 5",
+      "reason": "ALREADY_CHECKED_IN",
+      "created_at": "2026-08-26T07:39:35.762Z"
+    },
+    {
+      "id": "e9a4072b-83a6-466d-a82e-5c7929e538bb",
+      "event_id": "6ac7001d-9d45-47fe-91af-1099fb467cd2",
+      "scanned_value": "eventpulse:00000000-0000-0000-0000-000000000000:d7cf75439ad45f301ec1ed6310602d7d5ce48ad43bcaa216",
+      "entry_point": "VIP Gate",
+      "reason": "EVENT_MISMATCH",
+      "created_at": "2026-08-26T07:39:35.776Z"
+    }
+  ]
+}

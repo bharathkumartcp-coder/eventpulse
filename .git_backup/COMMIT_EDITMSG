@@ -1,0 +1,55 @@
+Fix production backend URL
+
+# Conflicts:
+#	backend/data/local_db.json
+#	frontend/src/services/api.js
+#	frontend/vercel.json
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# interactive rebase in progress; onto 9f9c677e
+# Last commands done (2 commands done):
+#    pick b0afd2cd # Initial commit
+#    pick 732a950f # Fix production backend URL
+# No commands remaining.
+# You are currently rebasing branch 'main' on '9f9c677e'.
+#
+# Changes to be committed:
+#	new file:   backend/.dockerignore
+#	new file:   backend/.env.example
+#	new file:   backend/Dockerfile
+#	new file:   backend/data/local_db.json
+#	new file:   backend/nodemon.json
+#	new file:   backend/package-lock.json
+#	new file:   backend/package.json
+#	new file:   backend/src/config/jwt.js
+#	new file:   backend/src/config/supabase.js
+#	new file:   backend/src/controllers/analyticsController.js
+#	new file:   backend/src/controllers/attendeeController.js
+#	new file:   backend/src/controllers/authController.js
+#	new file:   backend/src/controllers/checkInController.js
+#	new file:   backend/src/controllers/eventController.js
+#	new file:   backend/src/data/local_db.json
+#	new file:   backend/src/data/sample_attendees.csv
+#	new file:   backend/src/middleware/auth.js
+#	new file:   backend/src/middleware/rateLimiter.js
+#	new file:   backend/src/middleware/validate.js
+#	new file:   backend/src/routes/attendeeRoutes.js
+#	new file:   backend/src/routes/authRoutes.js
+#	new file:   backend/src/routes/checkInRoutes.js
+#	new file:   backend/src/routes/eventRoutes.js
+#	new file:   backend/src/scripts/seed.js
+#	new file:   backend/src/server.js
+#	new file:   backend/src/test/run-tests.js
+#	new file:   database/schema.sql
+#	new file:   frontend/.dockerignore
+#	new file:   frontend/.env.example
+#	new file:   frontend/.gitignore
+#	new file:   frontend/Dockerfile
+#	new file:   frontend/index.html
+#	new file:   frontend/nginx.conf
+#	new file:   frontend/src/services/api.js
+#	new file:   frontend/vercel.json
+#	new file:   vercel.json
+#

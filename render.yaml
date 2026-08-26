@@ -1,0 +1,54 @@
+services:
+  # ── Backend Node.js API Service ──────────────────────────────
+  - type: web
+    name: eventpulse-backend
+    env: node
+    region: oregon
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: CORS_ORIGIN
+        sync: false
+      - key: RATE_LIMIT_WINDOW_MS
+        value: 60000
+      - key: RATE_LIMIT_MAX_REQUESTS
+        value: 60
+
+  # ── Frontend Static Web Application ──────────────────────────
+  - type: web
+    name: eventpulse-frontend
+    env: static
+    region: oregon
+    plan: free
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    autoDeploy: true
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: eventpulse-backend
+          property: host
+      - key: VITE_SUPABASE_URL
+        sync: false
+      - key: VITE_SUPABASE_ANON_KEY
+        sync: false

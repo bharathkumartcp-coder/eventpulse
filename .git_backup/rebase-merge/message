@@ -1,0 +1,6 @@
+Fix production backend URL
+
+# Conflicts:
+#	backend/data/local_db.json
+#	frontend/src/services/api.js
+#	frontend/vercel.json

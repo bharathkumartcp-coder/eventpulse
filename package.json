@@ -1,0 +1,20 @@
+{
+  "name": "eventpulse-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EventPulse – QR-Based Smart Event Check-In & Attendance Analytics System",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run start:backend\" \"npm run start:frontend\"",
+    "dev": "concurrently --kill-others -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run preview",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "cd backend && npm test",
+    "seed": "cd backend && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

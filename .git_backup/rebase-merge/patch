@@ -1,0 +1,16 @@
+diff --git a/vercel.json b/vercel.json
+new file mode 100644
+index 00000000..5809c8b7
+--- /dev/null
++++ b/vercel.json
+@@ -0,0 +1,10 @@
++{
++  "buildCommand": "cd frontend && npm install && npm run build",
++  "outputDirectory": "frontend/dist",
++  "rewrites": [
++    {
++      "source": "/(.*)",
++      "destination": "/index.html"
++    }
++  ]
++}
